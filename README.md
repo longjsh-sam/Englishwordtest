@@ -1,19 +1,37 @@
-# SME CEO Dashboard
+# New Project
 
-GitHub에 바로 업로드할 수 있도록 정리한 단일 HTML 대시보드입니다.
+GitHub에 올릴 수 있도록 정리한 프로젝트 모음입니다.
 
-## Files
+## 포함된 프로젝트
 
-- `index.html`: 메인 대시보드 파일
+- `index.html`: 단일 HTML 대시보드
+- `child-reading-agent/`: OpenAI Responses API를 사용하는 어린이 독서 Agent Next.js 앱
 
-## GitHub 업로드 방법
+## 어린이 독서 Agent 실행
 
-1. 이 폴더를 새 GitHub 저장소에 푸시합니다.
-2. 저장소 메인 화면에서 `index.html`을 바로 확인할 수 있습니다.
-3. GitHub Pages를 켜면 웹페이지 형태로도 배포할 수 있습니다.
+```bash
+cd child-reading-agent
+npm install
+copy .env.example .env.local
+npm run dev
+```
 
-## GitHub Pages 배포
+브라우저에서 `http://localhost:3000`에 접속합니다.
 
-1. GitHub 저장소의 `Settings`로 이동합니다.
-2. `Pages`에서 배포 브랜치를 선택합니다.
-3. 루트(`/`)를 선택하면 `index.html`이 기본 페이지로 열립니다.
+## 환경 변수
+
+`child-reading-agent/.env.local`에 아래 값을 설정합니다.
+
+```bash
+OPENAI_API_KEY=your_openai_api_key
+NATIONAL_LIBRARY_API_KEY=your_national_library_api_key
+OPENAI_MODEL=gpt-5.4
+```
+
+## GitHub 업로드
+
+```bash
+git add .
+git commit -m "Add child reading agent"
+git push origin codex/publish-dashboard
+```
