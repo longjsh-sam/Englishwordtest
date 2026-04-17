@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "어린이 독서 Agent",
-  description: "책 읽기 후 단어 회상과 이야기 만들기를 돕는 어린이 독서 AI Agent",
+  title: "사진 영어 문제 생성기",
+  description: "사진 속 영어 단어와 문장을 분석해 학습자 수준에 맞는 문제를 생성합니다.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

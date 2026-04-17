@@ -6,7 +6,31 @@
   color-scheme: light;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f7fbf8;
+}
+
 body {
-  background: #f8fafc;
-  color: #0f172a;
+  margin: 0;
+  background: #f7fbf8;
+  color: #17211b;
+  font-family:
+    Arial,
+    "Apple SD Gothic Neo",
+    "Malgun Gothic",
+    sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
 }

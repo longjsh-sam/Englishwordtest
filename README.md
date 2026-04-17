@@ -1,13 +1,10 @@
 # New Project
 
-GitHub에 올릴 수 있도록 정리한 프로젝트 모음입니다.
+## 사진 영어 문제 생성기
 
-## 포함된 프로젝트
+`child-reading-agent/` 폴더에 사진 속 영어 단어와 문장을 분석해 학습자 수준에 맞는 문제를 만들어주는 Next.js 앱이 있습니다.
 
-- `index.html`: 단일 HTML 대시보드
-- `child-reading-agent/`: OpenAI Responses API를 사용하는 어린이 독서 Agent Next.js 앱
-
-## 어린이 독서 Agent 실행
+## 실행
 
 ```bash
 cd child-reading-agent
@@ -20,18 +17,7 @@ npm run dev
 
 ## 환경 변수
 
-`child-reading-agent/.env.local`에 아래 값을 설정합니다.
-
 ```bash
 OPENAI_API_KEY=your_openai_api_key
-NATIONAL_LIBRARY_API_KEY=your_national_library_api_key
 OPENAI_MODEL=gpt-5.4
-```
-
-## GitHub 업로드
-
-```bash
-git add .
-git commit -m "Add child reading agent"
-git push origin codex/publish-dashboard
 ```
