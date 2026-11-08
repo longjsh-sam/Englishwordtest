@@ -199,7 +199,12 @@ export default function HomePage() {
       <div className="mx-auto grid max-w-7xl gap-5 px-4 py-5 lg:grid-cols-[0.95fr_1.2fr]">
         <section className="space-y-4">
           <div className="rounded-lg border border-[#cfe1d4] bg-white p-5">
-            <p className="text-sm font-semibold text-[#d2493f]">사진 기반 영어 문제 생성기</p>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="text-sm font-semibold text-[#d2493f]">사진 기반 영어 문제 생성기</p>
+              <a href="/math" className="rounded-md bg-[#17211b] px-3 py-1.5 text-xs font-bold text-white">
+                중3 수학 개념 설명 트레이너 →
+              </a>
+            </div>
             <h1 className="mt-2 text-3xl font-black leading-tight text-[#17211b]">
               사진 속 영어를 읽고, 지금 수준에 맞는 문제를 만듭니다.
             </h1>
